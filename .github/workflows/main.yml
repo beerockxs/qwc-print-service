@@ -19,7 +19,7 @@ jobs:
             echo ::set-output name=tag::latest
           fi
       - name: Build and build
-        uses: elgohr/Publish-Docker-Github-Action@2.12
+        uses: elgohr/Publish-Docker-Github-Action@v5
         with:
           name: sourcepole/${{ github.event.repository.name }}
           username: ${{ secrets.DOCKER_HUB_USER }}
